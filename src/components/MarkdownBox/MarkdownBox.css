@@ -1,0 +1,16 @@
+
+.markdown-box {
+    margin-top: 1.8rem;
+    width: 60rem;
+    min-height: 25rem;
+    background-color: #c0d8d8;
+    margin-bottom: 2rem;
+}
+
+.expanded {
+    min-height: 80vh;
+}
+
+.hidden {
+    display: none;
+}

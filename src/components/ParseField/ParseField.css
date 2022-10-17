@@ -1,0 +1,35 @@
+
+.markdown-box--parse {
+    padding: 2rem;
+    font-size: 1.6rem;
+    
+}
+
+.markdown-box--parse img {
+    width: 80%;
+}
+
+.markdown-box--parse code {
+    background-color: white;
+    display: inline-block;
+}
+
+.markdown-box--parse blockquote {
+    padding-left: .5rem;
+    border-left: 3px solid darkgreen;
+}
+
+.markdown-box--parse table {
+    display: table;
+    border-collapse: collapse;
+    border-color: grey;
+}
+
+.markdown-box--parse th, td {
+    border: 3px solid;
+    border-color: inherit;
+}
+
+.markdown-box--parse ul {
+    padding-inline-start: 4rem;
+}

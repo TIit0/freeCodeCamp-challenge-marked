@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+.input-box__WindowBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #4aa3a3;
+    font-size: 1.6rem;
+}
+
+.input-box__WindowBar--logo {
+    margin: 1rem;
+    font-family: Russo One;
+    font-weight: 400;
+}
+
+.input-box__WindowBar--button {
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+    width: 3rem;
+}
+
+.input-box__WindowBar--button svg:hover {
+    fill: #0edfdf;
+}
