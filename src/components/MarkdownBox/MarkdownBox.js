@@ -4,21 +4,21 @@ import { marked } from "marked";
 import ParseField from "../ParseField/ParseField";
 
 
-export default function MarkdownBox({inputState, setInputState, markdownState, inputText}) {
-    let expanded;
+export default function MarkdownBox({isExpanded, handleInputExpansion, inputText}) {
+    const expanded = isExpanded ? "expanded" : "";
 
-    const hidden = markdownState ? "hidden" : "";
-
-    if (markdownState === false && inputState === true) {
-        expanded = "expanded"
-    } else {
-        expanded = ""
-    }
     
     return (
-        <div className={`markdown-box ${hidden} ${expanded}`}>
-            <WindowBar  windowType="Markdown" inputState={inputState} setInputState={setInputState}/> 
-            <ParseField inputText={inputText}></ParseField>
+        <div className={`markdown-box ${expanded}`}>
+
+            <WindowBar
+            windowType="markdown"
+            title="markdown"
+            handleInputExpansion={handleInputExpansion}
+            isExpanded={isExpanded}
+            /> 
+
+            <ParseField inputText={inputText}/>
         </div>
     )
 }

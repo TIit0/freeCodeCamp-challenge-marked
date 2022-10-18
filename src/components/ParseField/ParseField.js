@@ -11,7 +11,7 @@ export default function ParseField({ inputText }) {
 
     return (
         <div>
-            <div id="content" class="markdown-box--parse"></div>
+            <div id="content" className="markdown-box--parse"></div>
             <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
         </div>
     )
